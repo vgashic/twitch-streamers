@@ -1,0 +1,28 @@
+{
+    "name": "twitch-streamers",
+    "description": "",
+    "main": "index.html",
+    "authors": [
+        "Gasha"
+    ],
+    "license": "ISC",
+    "keywords": [
+        "twitch",
+        "stream",
+        "online",
+        "offline"
+    ],
+    "homepage": "index.html",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "4.0.0-alpha.2",
+        "jquery": ">=2.2.4",
+        "font-awesome": ">=4.6.3"
+    }
+}
