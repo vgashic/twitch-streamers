@@ -8,28 +8,34 @@ function fillStreamersList(name) {
 
 	$.getJSON(channelUrl + name, function(data) {
 		var logoUrl = data.logo;
-		console.log(logoUrl);
-	});
+		var profileUrl = data.url;
 
-	$.getJSON(streamUrl + name, function(data) {
-		console.log(logoUrl);
-		var htmlElement = "<div class='row {status}'>\n \
-	<div class='col-sm-1 col-sm-offset-2 {color}'>\n \
-		<img src='" + logoUrl + "' class='logo'>\n \
+		$.getJSON(streamUrl + name, function(data) {
+			console.log(logoUrl);
+			var htmlElement = "<div class='row channel {status}'>\n \
+	<div class='col-sm-1'>\n \
+		<img src='" + logoUrl + "' class='logo img-circle'>\n \
 	</div>\n \
-	<div class='col-sm-7'> \n \
-		<p> " + name + " </p> \n \
+		<div class='col-sm-3'>\n \
+			<a href='" + profileUrl + "'>" + name + "</a> \n \
+		</div>\n \
+		<div class='col-sm-8'>\n \
+			<span>status</span> \n \
+		</div>\n \
 	</div>\n \
 </div>";
 
 
 
-		if (data.stream === null) {
-			$(".streamers-list-offline").append(htmlElement.replace("{status}", "offline").replace("{color}", "bg-danger"));
-		} else {
-			$(".streamers-list-online").append(htmlElement.replace("{status}", "online").replace("{color}", "bg-success"));
-		}
+			if (data.stream === null) {
+				$(".streamers-list-offline").append(htmlElement.replace("{status}", "offline"));
+			} else {
+				$(".streamers-list-online").append(htmlElement.replace("{status}", "online"));
+			}
+		});
 	});
+
+
 }
 
 function getStreamersData(arr) {

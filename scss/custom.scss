@@ -1,9 +1,25 @@
+img {
+	vertical-align: middle;
+}
+
+a {
+	color: inherit;
+}
+
+.container {
+	max-width: 800px,
+}
+
 .online {
-	color: mediumseagreen;
+	background-color: mediumseagreen;
+	color: white;
+	padding: 5px;
 }
 
 .offline {
-	color: red;
+	background-color: gray;
+	color: #444;
+	padding: 5px;
 }
 
 .hidden {
@@ -13,5 +29,10 @@
 .logo {
 	max-height: 50px;
 	max-width: 50px;
-	border-radius: 50%;
+	border: 2px white solid;
+}
+
+.channel {
+	min-height: 50px;
+	margin: 5px auto;
 }
