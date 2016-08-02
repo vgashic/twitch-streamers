@@ -4,8 +4,25 @@ img {
 a {
   color: inherit; }
 
+html {
+  height: 100%; }
+
+body {
+  background-image: url("../img/blackorchid.png");
+  background-repeat: repeat;
+  color: white;
+  min-height: 100%;
+  overflow-x: hidden; }
+
 .container {
-  max-width: 800px; }
+  max-width: 800px;
+  min-height: 100vh;
+  margin-bottom: -50px; }
+
+.container::after {
+  display: block;
+  content: "";
+  height: 50px; }
 
 .online {
   background-color: mediumseagreen;
@@ -23,8 +40,42 @@ a {
 .logo {
   max-height: 50px;
   max-width: 50px;
-  border: 2px white solid; }
+  border: 2px white solid;
+  margin: 5px auto; }
 
 .channel {
+  min-height: 70px;
+  max-height: 70px;
+  margin: 5px auto;
+  font-size: 0.9em; }
+
+.channel-logo {
+  min-height: 60px; }
+
+.channel-name {
+  height: 30px;
+  text-overflow: ellipsis; }
+
+.channel-data {
+  height: 30px;
+  text-overflow: ellipsis; }
+
+.footer {
   min-height: 50px;
-  margin: 5px auto; }
+  margin-top: 10px;
+  background-color: #222;
+  font-family: "Consolas", monospace;
+  font-size: 0.7em; }
+
+/* Check fields */
+.filter-cbox {
+  visibility: hidden; }
+  .filter-cbox:checked + label {
+    color: white; }
+
+.filters label {
+  color: #999;
+  font-size: 0.6em;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none; }
