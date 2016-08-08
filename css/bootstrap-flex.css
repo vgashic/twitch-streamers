@@ -4572,7 +4572,8 @@ body {
   background-repeat: repeat;
   color: white;
   min-height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Miriam Libre", sans-serif, monospace; }
 
 .container {
   max-width: 800px;
@@ -4603,6 +4604,10 @@ body {
   border: 2px white solid;
   margin: 5px auto; }
 
+.main-title {
+  text-align: center;
+  font-family: "Montserrat Alternates"; }
+
 .channel {
   min-height: 70px;
   max-height: 70px;
@@ -4612,30 +4617,45 @@ body {
 .channel-logo {
   min-height: 60px; }
 
+.channel-data,
 .channel-name {
   height: 30px;
-  text-overflow: ellipsis; }
-
-.channel-data {
-  height: 30px;
-  text-overflow: ellipsis; }
+  line-height: 30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
 
 .footer {
   min-height: 50px;
   margin-top: 10px;
   background-color: #222;
   font-family: "Consolas", monospace;
-  font-size: 0.7em; }
+  font-size: 0.7em;
+  line-height: 50px; }
+  .footer p {
+    margin: 40px 0 0 0; }
 
 /* Check fields */
+.filters {
+  max-height: 40px; }
+  .filters .input-group {
+    max-height: 40px; }
+
 .filter-cbox {
-  visibility: hidden; }
+  display: none; }
   .filter-cbox:checked + label {
     color: white; }
 
 .filters label {
   color: #999;
   font-size: 0.6em;
+  max-height: 20px;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none; }
+
+@media screen and (min-width: 545px) {
+  .channel-name,
+  .channel-data {
+    height: 60px;
+    line-height: 60px; } }

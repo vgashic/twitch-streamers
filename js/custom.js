@@ -18,13 +18,13 @@ function fillStreamersList(name) {
 			var status = streamData.stream === null ? "" : channelData.status;
 
 			var htmlElement = "<div class='row channel {status}'>\n \
-	<div class='col-xs-2 channel-logo'>\n \
+	<div class='col-xs-4 col-sm-2 channel-logo'>\n \
 		<img src='" + logoUrl + "' class='logo img-circle'>\n \
 	</div>\n \
-	<div class='col-xs-10 col-sm-3 channel-name'>\n \
+	<div class='col-xs-8 col-sm-3 channel-name'>\n \
 		<a href='" + profileUrl + "'>" + name + "</a> \n \
 	</div>\n \
-	<div class='col-xs-10 col-sm-7 channel-data'>\n \
+	<div class='col-xs-8 col-sm-7 channel-data'>\n \
 		<span>" + game + "</span> \n \
 		<span class='hidden-xs-down'>" + status + "</span> \n \
 	</div>\n \
