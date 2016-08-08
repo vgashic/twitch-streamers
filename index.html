@@ -2,61 +2,73 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags always come first -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>twitch.tv streamers</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>twitch.tv streamers</title>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-flex.css">
-	<link rel="stylesheet" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Miriam+Libre|Montserrat+Alternates" rel="stylesheet">
-	<link rel="stylesheet" href="css/custom.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-flex.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Miriam+Libre|Montserrat+Alternates" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="main-title col-sm-12">
-				<h1>twitch.tv</h1>
-				<h6>streamers</h6>
-			</div>
-		</div>
-		<div class="filters row">
-			<div class="col-xs-2 col-xs-offset-8 col-sm-1 col-sm-offset-10">
-				<div class="input-group">
-					<input type="checkbox" id="cbox-online" class="filter-cbox" checked>
-					<label for="cbox-online">online</label>
-				</div>
-			</div>
-			<div class="col-xs-2 col-sm-1">
-				<div class="input-group">
-					<input type="checkbox" id="cbox-offline" class="filter-cbox" checked>
-					<label for="cbox-offline">offline</label>
-				</div>
-			</div>
-		</div>
-		<div class="streamers-list-online">
+    <div class="container">
+        <div class="row">
+            <div class="main-title col-sm-12">
+                <h1>twitch.tv</h1>
+                <h6>streamers</h6>
+            </div>
+        </div>
+        <div class="filters row">
+            <div class="col-xs-2 col-xs-offset-5 col-sm-1 col-sm-offset-8">
+                <div class="input-group">
+                    <input type="checkbox" id="cbox-online" class="filter-cbox" checked>
+                    <label for="cbox-online">online</label>
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-1">
+                <div class="input-group">
+                    <input type="checkbox" id="cbox-offline" class="filter-cbox" checked>
+                    <label for="cbox-offline">offline</label>
+                </div>
+            </div>
+            <div class="col-xs-2 col-sm-1">
+                <div class="input-group">
+                    <input type="checkbox" id="cbox-closed" class="filter-cbox" checked>
+                    <label for="cbox-closed">unavailable</label>
+                </div>
+            </div>
+        </div>
 
-		</div>
-		<div class="streamers-list-offline">
+        <div class="streamers-list-online">
 
-		</div>
+        </div>
 
-	</div>
+        <div class="streamers-list-offline">
 
-	<div class="footer">
-		<p class="text-xs-center footer-text">&lt;/ coded by <a href="http://gashaonline.com" target="_blank">Gasha</a> &gt;</p>
-	</div>
+        </div>
+
+        <div class="streamers-list-closed">
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p class="text-xs-center footer-text">&lt;/ coded by <a href="http://gashaonline.com" target="_blank">Gasha</a> &gt;</p>
+    </div>
 
 
-	<!-- jQuery first, then Bootstrap JS. -->
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="js/custom.js"></script>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
